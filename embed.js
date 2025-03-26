@@ -1,4 +1,4 @@
-(function(){const scriptTag=document.currentScript||(function(){const scripts=document.getElementsByTagName('script');return scripts[scripts.length-1]})();const apiUrl=scriptTag.getAttribute('data-api-url')||'http://24.144.112.206:3000/chat';const chatTitle=scriptTag.getAttribute('data-chat-title')||'Rust Tutor';const primaryColor=scriptTag.getAttribute('data-primary-color')||'#000000';const prefix='rt-';const style=document.createElement('style');style.textContent=`
+(function(){const scriptTag=document.currentScript||(function(){const scripts=document.getElementsByTagName('script');return scripts[scripts.length-1]})();const apiUrl=scriptTag.getAttribute('data-api-url')||'https://api.letsgetrusty.com/chat';const chatTitle=scriptTag.getAttribute('data-chat-title')||'Rust Tutor';const primaryColor=scriptTag.getAttribute('data-primary-color')||'#000000';const prefix='rt-';const style=document.createElement('style');style.textContent=`
     .${ prefix }container {
       --primary-color: #000000;
       --secondary-color: #f3f4f6;
