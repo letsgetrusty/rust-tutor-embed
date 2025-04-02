@@ -17,8 +17,8 @@
     return scripts[scripts.length - 1];
   })();
   
-  // const apiUrl = scriptTag.getAttribute('data-api-url') || 'https://api.letsgetrusty.com/chat';
-  const apiUrl = scriptTag.getAttribute('data-api-url') || 'http://localhost:3000/chat';
+  const apiUrl = scriptTag.getAttribute('data-api-url') || 'https://api.letsgetrusty.com/chat';
+  // const apiUrl = scriptTag.getAttribute('data-api-url') || 'http://localhost:3000/chat';
   const chatTitle = scriptTag.getAttribute('data-chat-title') || 'Rust Tutor';
   const primaryColor = scriptTag.getAttribute('data-primary-color') || '#000000';
   
