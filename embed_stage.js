@@ -82,6 +82,12 @@
       font-weight: 600;
       color: white;
     }
+
+    .${ prefix }chat-title-subtext {
+      font-size: 14px;
+      font-weight: 400;
+      color: #b6b6b6;
+    }
     
     .${ prefix }header-buttons {
       display: flex;
@@ -230,6 +236,24 @@
       display: none;
     }
     
+    /* Hide chat on mobile devices */
+    @media (max-width: 480px) {
+      .${ prefix }chat-bubble {
+        display: none;
+      }
+    }
+    
+    /* Move chat bubble up on smaller screens */
+    @media (max-width: 700px) and (min-width: 481px) {
+      .${ prefix }chat-bubble {
+        bottom: 70px;
+      }
+      
+      .${ prefix }chat-window {
+        bottom: 140px;
+      }
+    }
+    
     /* Markdown styling */
     .${ prefix }ai-message .${ prefix }message-content {
       line-height: 1.5;
@@ -306,7 +330,7 @@
     <!-- Chat Window -->
     <div class="${ prefix }chat-window">
         <div class="${ prefix }chat-header">
-            <h3>${ chatTitle }</h3>
+            <h3>${ chatTitle } <span class="${ prefix }chat-title-subtext">(Alpha)</span></h3>
             <div class="${ prefix }header-buttons">
                 <div class="${ prefix }reset-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
